@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <h1>Bolånskalkylatorn</h1>
+    <div class="container">
+        <div class="inputs">
+            <label for="loan">Hur stort är lånet?</label>
+            <input type="number" required id="loan" placeholder="max 10000000:-">
+        </div>
+        <div class="inputs">
+            <label for="interest">Rätesats i %</label>
+            <input type="number" required id="interest" placeholder="go crazy">
+        </div>
+        <div class="inputs">
+            <label for="time">Hur länge ska lånet betalas av?</label>
+            <input type="number" required id="time" placeholder="max 50yrs">
+        </div>
+        <button id="submit">Beräkna!</button>
+
+        <p id="error-output"></p>
+
+        <table>
+            <tr>
+                <th>Original loan</th>
+                <th>Yearly Interest</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td id="initial-loan"></td>
+                <td id="initial-interest"></td>
+                <td id="initial-time"></td>
+            </tr>
+            <tr>
+                <th>Total amount</th>
+                <th>Total Interest</th>
+                <th>Montly payment</th>
+            </tr>
+            <tr>
+                <td id="total-loan"></td>
+                <td id="total-interest"></td>
+                <td id="monthly-payment"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
